@@ -83,6 +83,7 @@ dependencies {
 ### Step 4 - Register React Package
 
 ```
+// file MainActivity.java
 import com.xiaobu.amap.AMapLocationReactPackage;
 ...
    /**
@@ -100,7 +101,8 @@ import com.xiaobu.amap.AMapLocationReactPackage;
 
 ### Step 5 - Add service, api key and permissions
 ```
-// file: android/srsettings.gradle
+// file: android/app/src/main/AndroidManifest.xml
+
 <!--用于进行网络定位-->
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
 <!--用于访问GPS定位-->
